@@ -1,0 +1,66 @@
+/* Default styling */
+html {
+    background-color: blue;
+}
+
+/* If screen wider than 600px */
+@media screen and (min-width: 600px) {
+    html {
+        background-color: red;
+    }
+}
+
+/* If screen wider than 1024px */
+@media screen and (min-width: 1024px) {
+    html {
+        background-color: violet;
+    }
+}
+
+/* This is the CSS for Mobile screens++ */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* This is the CSS for Laptop Sized Screens++ */
+@media screen and (min-width: 1024px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 400px);
+        gap: 100px;
+        justify-content: center;
+    }
+}
+
+
+.content-section {
+    margin: 0px auto;
+    background-color: rgb(226, 222, 222);
+    border-radius: 10px;
+    min-height: 300px;
+    width: 100%;
+    max-width: 400px;
+    
+    font-size: 1vw;
+    padding: 1em 2em;
+}
+
+.content-image {
+    width: 100%;
+}
+
+.content-title {
+    text-align: center;
+}
+
+.content-details {
+    display: none;
+}
+
+@media screen and (min-width: 1024px) {
+    .content-details {
+        display: block;
+    }
+}
